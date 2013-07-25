@@ -1,0 +1,42 @@
+<!--  
+ * Copyright (C) 2009 Paul McCann
+ * Contact ismisepaul@gmail.com
+ *    
+ * Program to generate an Eircom WEP password from an Eircom SSID
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ -->
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/tab_generate" 
+            android:layout_centerHorizontal="true" 
+            android:layout_height="fill_parent" 
+            android:layout_width="fill_parent">
+
+	<LinearLayout android:orientation="vertical" android:isScrollContainer="true" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_horizontal" android:id="@+id/LinearLayout01">
+		<TableLayout android:layout_height="wrap_content" android:id="@+id/TableLayout01" android:layout_width="wrap_content"><TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20sp"><TextView android:textStyle="bold" android:text="eircom" android:textSize="30sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/eircom"></TextView>
+			<EditText android:id="@+id/ssidTextEdit" android:text="@+id/EditText01" android:gravity="left" android:textSize="25sp" android:layout_width="140sp" android:layout_height="wrap_content" android:maxLength="8" android:inputType="numberDecimal"></EditText>
+			</TableRow>
+</TableLayout>
+<Button android:layout_height="wrap_content" android:layout_marginTop="12sp" android:id="@+id/go" android:width="175sp" android:text="GO!" android:layout_width="wrap_content"></Button>
+<TextView android:layout_height="wrap_content" android:layout_marginTop="35sp" android:text="@string/info_line1" android:layout_width="wrap_content" android:id="@+id/TextViewLine1"></TextView>
+<TextView android:layout_height="wrap_content" android:text="@string/info_line2" android:layout_width="wrap_content" android:id="@+id/TextViewLine2"></TextView>
+<TextView android:layout_height="wrap_content" android:text="@string/info_line3" android:layout_width="wrap_content" android:id="@+id/TextViewLine3"></TextView>
+<TextView android:textStyle="bold" android:layout_height="wrap_content" android:layout_marginTop="20sp" android:text="WEP Keys:" android:textSize="18sp" android:layout_width="wrap_content" android:id="@+id/TextView01"></TextView>
+<EditText android:scrollHorizontally="true" android:text="@+id/EditText01" android:layout_height="wrap_content" android:id="@+id/key1Text" android:gravity="center" android:clickable="true" android:layout_width="280sp" android:inputType="none"></EditText>
+<EditText android:scrollHorizontally="true" android:text="@+id/EditText01" android:layout_height="wrap_content" android:id="@+id/key2Text" android:gravity="center" android:editable="false" android:layout_width="280sp" android:inputType="none"></EditText>
+<EditText android:scrollHorizontally="true" android:text="@+id/EditText01" android:layout_height="wrap_content" android:id="@+id/key3Text" android:gravity="center" android:layout_width="280px" android:inputType="none"></EditText>
+<EditText android:scrollHorizontally="true" android:text="@+id/EditText01" android:layout_height="wrap_content" android:id="@+id/key4Text" android:gravity="center" android:layout_width="280px" android:inputType="none"></EditText>
+</LinearLayout>
+</ScrollView>
